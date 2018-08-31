@@ -145,16 +145,16 @@ a:link {
     }
 }
 
-.title>h1 {
+h1 {
     color: #fff;
     text-transform: capitalize;
     font-size: 1.5em;
     margin: .2em 0;
-    font-size: 300;
+    font-weight: 200;
 }
 
 @media (min-width: 35em) {
-    .title>h1 {
+    h1 {
         font-size: 2.25rem;
     }
 }
@@ -204,9 +204,15 @@ a:link {
     background-color: white;
 }
 
+.nav-menu a:hover {
+    background: #fff;
+    color: crimson;
+    font-weight: 400;
+}
+
 .btn {
     color: white;
-    font-weight: 400;
+    font-weight: 300;
     text-shadow: none;
     border: none;
     background: rgb(236, 50, 88);
@@ -219,4 +225,112 @@ a:link {
     box-shadow: .1em .1em .4em #000;
     position: relative;
     top: -.1em;
+}
+
+
+/* SignUp page Styles */
+
+.form {
+    width: 80%;
+    padding: 2em;
+    margin: 1em auto;
+    background: whitesmoke;
+    border-radius: .7em;
+    box-shadow: .2em .2em .8em rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 35em) {
+    .form {
+        width: 65%;
+        margin: 2em auto;
+    }
+}
+
+@media (min-width: 50em) {
+    .form {
+        width: 50%;
+    }
+}
+
+.form .inner-wrap {
+    padding: 1em;
+    background: whitesmoke;
+    border-radius: .4em;
+    margin-bottom: .5em;
+}
+
+@media (min-width: 35em) {
+    .form .inner-wrap {
+        margin-bottom: 1.5em;
+    }
+}
+
+.form h1 {
+    background: crimson;
+    color: white;
+    margin: -.5em -.5em .5em -.5em;
+    padding: .2em;
+    text-shadow: .2em .2em .3em rgba(0, 0, 0, 0.12);
+    font: 200 1.5em inherit;
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.3);
+    border: 1px solid #666;
+}
+
+.form h1>span {
+    display: block;
+    margin: .3em;
+    font-size: .5em;
+}
+
+.form label {
+    display: block;
+    font-size: .8em;
+    color: #888;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="date"],
+.form input[type="search"],
+.form input[type="time"],
+.form input[type="url"],
+.form input[type="password"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: .5em;
+}
+
+.form .section {
+    font: 300 1em inherit;
+    color: crimson;
+    text-align: left;
+}
+
+.form .section span {
+    background: crimson;
+    padding: .25em .5em;
+    border-radius: 1em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font-weight: 200;
+    font-size: 1.2em;
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    margin-right: 1em
+}
+
+.form .subscribe {
+    display: block;
+    margin-bottom: .5em;
+    font-size: .9em;
+}
+
+.form .btn {
+    padding: .8em;
+    font-size: .9em;
+    font-weight: 200;
 }
