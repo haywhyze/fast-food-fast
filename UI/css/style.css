@@ -334,3 +334,52 @@ textarea {
     font-size: .9em;
     font-weight: 200;
 }
+
+
+/* menu styles */
+
+.menu-block {
+    display: flex;
+    align-items: flex-start;
+    background: dodgerblue;
+    padding: 1em;
+    margin-bottom: .2em;
+    max-width: 80%;
+    text-align: left;
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.3);
+}
+
+.menu-block>img {
+    width: 30%;
+    margin: 0 0.5rem 0 0;
+}
+
+.menu-block>div {
+    flex: 1;
+}
+
+.menu-block h2,
+h3,
+h4 {
+    font-weight: 300;
+    padding: 0.2em;
+    display: inline-block;
+    background: #fff;
+    color: crimson;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.32);
+    margin: 0 0 0.3em 0;
+}
+
+.menu-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0.6em;
+}
+
+@media (min-width: 35em) {
+    .menu-block {
+        width: 49%;
+    }
+}
