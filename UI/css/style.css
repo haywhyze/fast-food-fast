@@ -383,3 +383,44 @@ h4 {
         width: 49%;
     }
 }
+
+table {
+    margin: 1em auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: .7em;
+    margin: 0;
+}
+
+thead tr {
+    background-color: rgba(175, 210, 238, 0.8);
+    border-bottom: 3px solid rgba(175, 210, 238, 1);
+}
+
+tbody tr {
+    background: rgba(175, 210, 238, 0.3);
+    border-bottom: white 2px solid;
+}
+
+tbody tr:hover {
+    background-color: rgba(175, 210, 238, 0.8);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.52);
+    z-index: 32;
+}
+
+.show {
+    display: block !important;
+}
