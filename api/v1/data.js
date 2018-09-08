@@ -1,12 +1,24 @@
-const orders = {
+const orders = [{
   orderId: 1,
   orderItems: [
-    ['pizza', 2, 1500],
-    ['meat pie', 2, 800],
-    ['five alive', 1, 1200],
+    {
+      name: 'pizza',
+      quantity: 2,
+      price: 1500,
+    },
+    {
+      name: 'meat pie',
+      quantity: 2,
+      price: 800,
+    },
+    {
+      name: 'five alive',
+      quantity: 1,
+      price: 1200,
+    },
   ],
   orderPrice: 7000,
   orderStatus: 'pending',
-};
+}];
 
 export default orders;
