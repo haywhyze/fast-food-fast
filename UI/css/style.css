@@ -1,0 +1,426 @@
+/***************
+** Base Styles for the Page
+***************/
+
+:root {
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.6em);
+}
+
+*,
+ ::before,
+ ::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+/***************
+** Main element Styles
+***************/
+
+.nav-menu {
+    margin: 0;
+    padding-left: 0;
+    border: 1px solid #ccc;
+    list-style: none;
+    background-color: rgb(236, 50, 88);
+    color: #fff;
+}
+
+.nav-menu>li+li {
+    border-top: 1px solid #ccc;
+}
+
+.nav-menu>li>a {
+    display: block;
+    padding: 0.8em 1em;
+    color: #fff;
+    font-weight: normal;
+}
+
+@media (min-width: 35em) {
+    .nav-menu {
+        display: flex;
+        border: 0;
+        padding: .5em 1em;
+    }
+    .nav-menu>li {
+        flex: 1;
+    }
+    .nav-menu>li+li {
+        border: 0;
+    }
+    .nav-menu>li>a {
+        padding: 0.3em;
+        text-align: center;
+    }
+}
+
+@media (min-width: 50em) {
+    .nav-menu {
+        padding: .5em 4em;
+    }
+}
+
+.menu {
+    position: relative;
+    text-align: left;
+}
+
+.menu-toggle {
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    font-size: 3em;
+    width: 1em;
+    height: 1em;
+    line-height: 0.4;
+    text-indent: 5em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu-toggle::after {
+    position: absolute;
+    top: 0.2em;
+    left: 0.2em;
+    display: block;
+    content: "\2261";
+    text-indent: 0;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 3em;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+
+.menu.is-open .menu-dropdown {
+    display: block;
+}
+
+@media (min-width: 35em) {
+    .menu-toggle {
+        display: none;
+    }
+    .menu-dropdown {
+        display: block;
+        position: static;
+    }
+}
+
+.hero {
+    padding: 2em 1em;
+    text-align: center;
+    background-image: url(../img/edika\ ikong.jpg);
+    background-size: 100%;
+    color: #fff;
+    text-shadow: 0.1em 0.1em 0.3em #000;
+}
+
+@media (min-width:35em) {
+    .hero {
+        padding: 5em 3em;
+    }
+}
+
+@media (min-width: 50em) {
+    .hero {
+        padding: 7em 6em;
+    }
+}
+
+h1 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    margin: .2em 0;
+    font-weight: 200;
+}
+
+@media (min-width: 35em) {
+    h1 {
+        font-size: 2.25rem;
+    }
+}
+
+.title>p {
+    color: #eee;
+    margin: 0.8em;
+}
+
+.row {
+    padding: 1em;
+}
+
+@media (min-width: 35em) {
+    .row {
+        display: flex;
+        margin-left: -.75em;
+        margin-right: -.75em;
+        padding: 2em 1em;
+    }
+    .column {
+        flex: 1;
+        ;
+        margin-right: .75em;
+        margin-left: .75em;
+    }
+}
+
+@media (min-width: 50em) {
+    .row {
+        padding: 2em 4em;
+    }
+}
+
+.subtitle {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+#message {
+    height: 5em;
+    width: 100%;
+    margin-bottom: 1em;
+    border: crimson 1px solid;
+    background-color: white;
+}
+
+.nav-menu a:hover {
+    background: #fff;
+    color: crimson;
+    font-weight: 400;
+}
+
+.btn {
+    color: white;
+    font-weight: 300;
+    text-shadow: none;
+    border: none;
+    background: rgb(236, 50, 88);
+    padding: .4em 1em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: .1em .1em .4em #000;
+    position: relative;
+    top: -.1em;
+}
+
+
+/* SignUp page Styles */
+
+.form {
+    width: 80%;
+    padding: 2em;
+    margin: 1em auto;
+    background: whitesmoke;
+    border-radius: .7em;
+    box-shadow: .2em .2em .8em rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 35em) {
+    .form {
+        width: 65%;
+        margin: 2em auto;
+    }
+}
+
+@media (min-width: 50em) {
+    .form {
+        width: 50%;
+    }
+}
+
+.form .inner-wrap {
+    padding: 1em;
+    background: whitesmoke;
+    border-radius: .4em;
+    margin-bottom: .5em;
+}
+
+@media (min-width: 35em) {
+    .form .inner-wrap {
+        margin-bottom: 1.5em;
+    }
+}
+
+.form h1 {
+    background: crimson;
+    color: white;
+    margin: -.5em -.5em .5em -.5em;
+    padding: .2em;
+    text-shadow: .2em .2em .3em rgba(0, 0, 0, 0.12);
+    font: 200 1.5em inherit;
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.3);
+    border: 1px solid #666;
+}
+
+.form h1>span {
+    display: block;
+    margin: .3em;
+    font-size: .5em;
+}
+
+.form label {
+    display: block;
+    font-size: .8em;
+    color: #888;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="date"],
+.form input[type="search"],
+.form input[type="time"],
+.form input[type="url"],
+.form input[type="password"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: .5em;
+}
+
+.form .section {
+    font: 300 1em inherit;
+    color: crimson;
+    text-align: left;
+}
+
+.form .section span {
+    background: crimson;
+    padding: .25em .5em;
+    border-radius: 1em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font-weight: 200;
+    font-size: 1.2em;
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    margin-right: 1em
+}
+
+.form .subscribe {
+    display: block;
+    margin-bottom: .5em;
+    font-size: .9em;
+}
+
+.form .btn {
+    padding: .8em;
+    font-size: .9em;
+    font-weight: 200;
+}
+
+
+/* menu styles */
+
+.menu-block {
+    display: flex;
+    align-items: flex-start;
+    background: dodgerblue;
+    padding: 1em;
+    margin-bottom: .2em;
+    max-width: 80%;
+    text-align: left;
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.3);
+}
+
+.menu-block>img {
+    width: 30%;
+    margin: 0 0.5rem 0 0;
+}
+
+.menu-block>div {
+    flex: 1;
+}
+
+.menu-block h2,
+h3,
+h4 {
+    font-weight: 300;
+    padding: 0.2em;
+    display: inline-block;
+    background: #fff;
+    color: crimson;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.32);
+    margin: 0 0 0.3em 0;
+}
+
+.menu-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0.6em;
+}
+
+@media (min-width: 35em) {
+    .menu-block {
+        width: 49%;
+    }
+}
+
+table {
+    margin: 1em auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: .7em;
+    margin: 0;
+}
+
+thead tr {
+    background-color: rgba(175, 210, 238, 0.8);
+    border-bottom: 3px solid rgba(175, 210, 238, 1);
+}
+
+tbody tr {
+    background: rgba(175, 210, 238, 0.3);
+    border-bottom: white 2px solid;
+}
+
+tbody tr:hover {
+    background-color: rgba(175, 210, 238, 0.8);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.52);
+    z-index: 32;
+}
+
+.show {
+    display: block !important;
+}
