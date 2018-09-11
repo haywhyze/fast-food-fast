@@ -34,7 +34,7 @@ app.post('/orders', (request, response) => {
     order.orderItems[i].name = request.body[`orderItem_${i}_name`];
     order.orderItems[i].quantity = request.body[`orderItem_${i}_quantity`];
     order.orderItems[i].price = request.body[`orderItem_${i}_price`];
-    order.orderPrice += (order.orderItems[i].price * order.orderItems[i].quantity)
+    order.orderPrice += (order.orderItems[i].price * order.orderItems[i].quantity);
   }
 
   data.push(order);
@@ -42,7 +42,68 @@ app.post('/orders', (request, response) => {
     success: 'true',
     message: 'order placed successfuly',
     order,
-    test: typeof (order.orderItems),
+  });
+});
+
+// fetching single order
+app.get('/orders/:id', (request, response) => {
+  const id = parseInt(request.params.id, 10);
+  data.map((order) => {
+    if (order.orderId === id) {
+      return response.status(200).send({
+        success: 'true',
+        message: 'order retrieved successfully',
+        order,
+      });
+    }
+  });
+  return response.status(404).send({
+    success: 'false',
+    message: 'the order you requested for does not exist',
+  });
+});
+
+// update order status from the database.
+app.put('/orders/:id', (request, response) => {
+  const id = parseInt(request.params.id, 10);
+  let orderFound;
+  let itemIndex;
+
+  data.map((order, index) => {
+    if (order.orderId === id) {
+      orderFound = order;
+      itemIndex = index;
+
+    }
+  });
+
+  if (!orderFound) {
+    return response.status(404).send({
+      success: 'false',
+      message: 'order not found',
+    });
+  }
+
+  if (!request.body.orderStatus) {
+    return response.status(400).send({
+      success: 'false',
+      message: 'order status is required',
+    })
+  }
+
+  const updatedOrder = {
+    orderId: orderFound.orderId,
+    orderItems: orderFound.orderItems,
+    orderPrice: orderFound.orderPrice,
+    orderStatus: request.body.orderStatus,
+  };
+
+  data.splice(itemIndex, 1, updatedOrder);
+
+  return response.status(201).send({
+    success: 'true',
+    message: 'order updated successfully',
+    updatedOrder,
   });
 });
 
