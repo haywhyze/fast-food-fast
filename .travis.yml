@@ -2,4 +2,4 @@ language: node_js
 node_js: "v8.11.3"
 before_install: cd api/v1/
 install: npm install
-script: npm start
+script: npm test
