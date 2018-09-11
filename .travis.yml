@@ -1,0 +1,4 @@
+language: node_js
+before_install: cd api/v1/
+install: npm install
+script: npm start
