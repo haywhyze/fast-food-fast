@@ -13,3 +13,14 @@ describe('GET /orders', () => {
       });
   });
 });
+
+describe('POST /orders', () => {
+  it('should place an order', () => {
+    return chai.request(app)
+      .post('/orders')
+      .then((response) => {
+        chai.expect(response).to.have.status(201);
+        chai.expect(response.body).to.be.an('object');
+      });
+  });
+});

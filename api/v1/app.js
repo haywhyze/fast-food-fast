@@ -42,6 +42,7 @@ app.post('/orders', (request, response) => {
     success: 'true',
     message: 'order placed successfuly',
     order,
+    test: typeof (order.orderItems),
   });
 });
 
