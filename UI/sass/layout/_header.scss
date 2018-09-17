@@ -1,0 +1,23 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.8rem 3rem;
+    z-index: 2;
+    background-color: rgba($color-primary, 0.3);
+    width: 100%;
+
+    @include clearfix;
+
+    &__logo-box {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        background: $color-secondary;
+        padding: 1.5rem 2.1rem;
+    }
+
+    &__btn-container {
+        float: right;
+    }
+}

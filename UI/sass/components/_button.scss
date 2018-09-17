@@ -1,0 +1,45 @@
+.btn {
+
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10rem;
+        font-size: .8rem;
+        position: relative;
+        transition: all .2s;
+        cursor: pointer;
+        text-shadow: none;
+        padding: .5rem 1rem;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-text-dark, 0.2);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-text-dark, 0.2)
+    }
+
+    &--main {
+        background: $color-primary;
+        color: $color-text-light;
+    }
+
+    &--alt {
+        border: 1px solid $color-secondary;
+        background-color: lighten($color-tertiary, 10%);
+        color: $color-text-light;
+    }
+
+    &--xl:link,
+    &--xl:visited{
+        padding: .8rem 1.5rem;
+        font-size: 1 rem;
+        font-weight: 400;
+        animation: moveInBottom 1s ease-Out;
+    }
+}

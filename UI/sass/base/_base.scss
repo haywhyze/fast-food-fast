@@ -1,0 +1,20 @@
+
+:root {
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.6em);
+}
+
+*,
+ ::before,
+ ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    box-sizing: border-box;
+}
