@@ -2,7 +2,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0.8rem 3rem;
+    padding: 1.2rem 4rem;
     z-index: 2;
     background-color: rgba($color-primary, 0.3);
     width: 100%;
@@ -14,7 +14,7 @@
         position: absolute;
         top: 0;
         background: $color-secondary;
-        padding: 1.5rem 2.1rem;
+        padding: 3rem 4rem;
     }
 
     &__btn-container {

@@ -6,17 +6,17 @@
         text-decoration: none;
         display: inline-block;
         border-radius: 10rem;
-        font-size: .8rem;
+        font-size: 1.5rem;
         position: relative;
         transition: all .2s;
         cursor: pointer;
         text-shadow: none;
-        padding: .5rem 1rem;
+        padding: 1rem 2rem;
     }
     
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-text-dark, 0.2);
+        box-shadow: 0 2rem 4rem rgba($color-text-dark, 0.2);
     }
 
     &:active {
@@ -37,8 +37,8 @@
 
     &--xl:link,
     &--xl:visited{
-        padding: .8rem 1.5rem;
-        font-size: 1 rem;
+        padding: 1.2rem 4rem;
+        font-size: 2rem;
         font-weight: 400;
         animation: moveInBottom 1s ease-Out;
     }
