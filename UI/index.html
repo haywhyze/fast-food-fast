@@ -14,7 +14,8 @@
     <div class="container">
         <header class="header">
             <div class="header__logo-box">
-                <img class="header__logo" src="" alt="Logo" srcset="">
+                <!-- <img class="header__logo" src="" alt="Logo" srcset=""> -->
+                <h3 class="heading-tertiary">fFf</h3>
             </div>
             <div class="header__btn-container">
                 <a href="./signin.html" class="btn btn--alt">Sign In</a>
@@ -23,7 +24,6 @@
             <nav class="primary-nav primary-nav--pull-right">
                 <ul>
                     <li><a class="btn" href="#about-us">About Us</a></li>
-                    <li><a class="btn" href="#our-services">Our Services</a></li>
                     <li><a class="btn" href="#contact-us">Contact Us</a></li>
                 </ul>
             </nav>
@@ -59,27 +59,40 @@
                     </div>
                 </div>
                 
-            </section>
+            </section >
+            <section class="contact-section">
+                <div class="row">
+                    <div class="contact">
+                        <div class="contact__form">
+                            <form action="#" class="form">
+                                <div class="u-margin-bottom-medium">
+                                    <h2 class="heading-secondary">
+                                        Ask Us Anything!!!
+                                    </h2>
+                                </div>
 
-            <div class="row">
-                <section class="column">
-                    <h2 class="subtitle">About Us</h2>
-                </section>
-                <section class="column">
-                    <h2 class="subtitle">Our Services</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eligendi earum maxime corporis at aperiam!
-                    </p>
-                </section>
-                <section class="column">
-                    <h2 class="subtitle">Contact Us</h2>
-                    <form action="">
-                        <div class="inner-wrap">
-                            <textarea name="message" id="message" placeholder="Your Message Here"></textarea>
+                                <div class="form__group">
+                                    <input type="text" name="name" placeholder="Full name" id="name" class="form__input required">
+                                    <label for="name" class="form__label">Full name</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="email" name="email" placeholder="Email address" id="email" class="form__input required">
+                                    <label for="email" class="form__label">Email address</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <textarea class="form__textarea" name="message" id="message" placeholder="Your Message Here"></textarea>
+                                    <label for="message" class="form__label">Your Message Here</label>
+                                </div>
+
+                                <a href="#" class="btn btn--main">Send Message</a>
+                            </form>
                         </div>
-                    </form>
-                    <a class="btn">Send Message</a>
-                </section>
-            </div>
+                    </div>
+                </div>
+            </section>
+            
 
             <!-- <section class="grid-test">
                 <div class="row">
