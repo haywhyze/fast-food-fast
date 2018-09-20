@@ -36,7 +36,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box; }
@@ -94,6 +95,11 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 6rem; }
+
+.u-go-to-top {
+  position: fixed !important;
+  top: 90vh;
+  left: 90vw; }
 
 .header {
   position: absolute;
