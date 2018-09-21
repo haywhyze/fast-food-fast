@@ -9,10 +9,14 @@
 
 @import "layout/header";
 @import "layout/grid";
+@import "layout/footer";
 
 @import "components/button";
+@import "components/card";
 @import "components/primary-nav";
 @import "components/composition";
 @import "components/form";
+@import "components/checkout";
 
 @import "pages/home";
+@import "pages/menu";
