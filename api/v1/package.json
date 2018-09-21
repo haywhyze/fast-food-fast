@@ -1,0 +1,28 @@
+{
+    "name": "fast-food-fast-api",
+    "version": "1.0.0",
+    "description": "RESTful APIs that serves fron-end web clients",
+    "main": "app.js",
+    "scripts": {
+        "test": "mocha app.test.js --compilers js:babel-core/register --exit",
+        "start": "nodemon app.js --exec babel-node --"
+    },
+    "author": "Yusuf Ayo",
+    "license": "ISC",
+    "dependencies": {
+        "babel-cli": "^6.26.0",
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3"
+    },
+    "devDependencies": {
+        "babel-preset-env": "^1.7.0",
+        "chai": "^4.1.2",
+        "chai-http": "^4.2.0",
+        "coffeescript": "^2.3.1",
+        "eslint": "^5.5.0",
+        "eslint-config-airbnb-base": "^13.1.0",
+        "eslint-plugin-import": "^2.14.0",
+        "mocha": "^5.2.0",
+        "nodemon": "^1.18.4"
+    }
+}

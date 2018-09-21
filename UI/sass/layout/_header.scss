@@ -1,0 +1,32 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1.2rem 4rem;
+    z-index: 2;
+    background-color: rgba($color-primary, 0.3);
+    width: 100%;
+
+    @include respond(phone) {
+        background-color: initial;
+    }
+
+    @include clearfix;
+
+    &__logo-box {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        background: $color-secondary;
+        padding: 3rem 4rem;
+
+        @include respond(phone) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__btn-container {
+        float: right;
+    }
+}

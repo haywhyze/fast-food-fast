@@ -1,0 +1,31 @@
+.order-history {
+    @include container;
+
+    & table {
+        width: 100%;
+        font-size: $default-font-size;
+        padding: 2rem;
+        border-collapse: collapse;
+
+        & tbody tr:nth-child(even) {
+            background-color: rgba($color-primary, .2);
+
+            &:hover {
+                background-color: rgba($color-primary, .5);
+            }
+        }
+        
+        & tbody tr:nth-child(odd) {
+            background-color: rgba($color-secondary, .2);
+
+            &:hover {
+                background-color: rgba($color-secondary, .5);                
+            }
+        }
+
+        & td {
+            padding: 1rem;
+        }
+
+    }
+}

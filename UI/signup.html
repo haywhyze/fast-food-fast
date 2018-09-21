@@ -12,62 +12,70 @@
 
 <body>
     <div class="container">
-        <header>
-            <nav class="menu" id="main-menu">
-
-                <button class="menu-toggle" id="toggle-menu">
-                            toggle menu
-                        </button>
-                <div class="menu-dropdown">
-                    <ul class="nav-menu">
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Register</a>
-                        </li>
-                        <li>
-                            <a href="./signin.html">Sign In</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+            <header class="header">
+                    <a href="./">
+                        <div class="header__logo-box">
+                            <!-- <img class="header__logo" src="" alt="Logo" srcset=""> -->
+                            <h3 class="heading-tertiary">fFf</h3>
+                        </div>
+                    </a>
+                    <div class="header__btn-container">
+                        <a href="./signin.html" class="btn btn--alt">Sign In</a>
+                    </div>
+                </header>
         <main>
-            <div class="form">
-                <h1>Sign Up Now!<span>Sign up and get food delivered to your doorstep in no time</span></h1>
-                <form>
-                    <div class="section"><span>&LowerRightArrow;</span>Fullname</div>
-                    <div class="inner-wrap">
-                        <label>First Name <input type="text" name="first-name" required></label>
-                        <label>Last Name <input type="text" name="last-name" required></label>
-                    </div>
+                
+                
+                <div class="signup-form">
+                        <div class="u-center-text">
+                                <h2 class="heading-secondary">Sign Up Now!</h2>
+                                <h3 class="heading-tertiary">Sign up and get food delivered to your doorstep in no time</h3>
+                            </div>
+                    <form action="#" class="form">
 
-                    <div class="section"><span>&LowerRightArrow;</span>Email &amp; Phone</div>
-                    <div class="inner-wrap">
-                        <label>Email Address <input type="email" name="email" required></label>
-                        <label>Phone Number <input type="text" name="phone"></label>
-                    </div>
+                        <div class="form__group">
+                            <input type="text" name="name" placeholder="Full name" id="name" class="form__input required">
+                            <label for="name" class="form__label">Full name</label>
+                        </div>
 
-                    <div class="section"><span>&LowerRightArrow;</span>Passwords</div>
-                    <div class="inner-wrap">
-                        <label>Password <input type="password" name="password" required></label>
-                        <label>Confirm Password <input type="password" name="password" required></label>
-                    </div>
-                    <div>
-                        <span class="subscribe">
-                            <input type="checkbox" name="subscribe">I agree to receive email from Fast-Food-Fast. 
-                        </span>
-                        <input class="btn submit" type="submit" name="Sign Up">
-                    </div>
-                    <p>If you already have an account, click <a href="signin.html">here</a> to Log in</p>
+                        <div class="form__group">
+                            <input type="text" name="username" placeholder="Username" id="username" class="form__input required">
+                            <label for="username" class="form__label">Username</label>
+                        </div>
 
-                </form>
-            </div>
+                        <div class="form__group">
+                            <input type="email" name="email" placeholder="Email address" id="email" class="form__input required">
+                            <label for="email" class="form__label">Email address</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="password" name="password" placeholder="Password" id="password" class="form__input required">
+                            <label for="password" class="form__label">Password</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="password" name="confirm-password" placeholder="Confirm Password" id="password" class="form__input required">
+                            <label for="confirm-password" class="form__label">Confirm Password</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="tel" name="phone" placeholder="Phone Number Here" id="username" class="form__input required">
+                            <label for="username" class="form__label">Phone Number Here</label>
+                        </div>
+
+                        <div class="form__group">
+                            <textarea class="form__textarea" name="address" id="address" placeholder="Address"></textarea>
+                            <label for="message" class="form__label">Address</label>
+                        </div>
+                        <div class="u-center-text">
+                            <a href="#" class="btn btn--main u-center-text">Sign Up</a>
+                        </div>
+                        <p class="paragraph">If you already have an account, click <a class="btn-text" href="./signin.html">here</a> to log in</p>
+                    </form>
+                </div>
         </main>
-        <footer>
-            <p>Fast-Food-Fast &copy; 2018. Developed with &hearts; by Haywhyze</p>
+        <footer class="footer u-center-text">
+            <p class="paragraph">Fast-Food-Fast &copy; 2018. Developed with &hearts; by Haywhyze</p>
         </footer>
     </div>
 

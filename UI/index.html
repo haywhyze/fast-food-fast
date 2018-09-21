@@ -12,60 +12,150 @@
 
 <body>
     <div class="container">
-        <header>
-            <nav class="menu" id="main-menu">
-
-                <button class="menu-toggle" id="toggle-menu">
-                    toggle menu
-                </button>
-                <div class="menu-dropdown">
-                    <ul class="nav-menu">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="./signup.html">Register</a>
-                        </li>
-                        <li>
-                            <a href="./signin.html">Sign In</a>
-                        </li>
-                    </ul>
-                </div>
+        <header class="header">
+            <div class="header__logo-box">
+                <!-- <img class="header__logo" src="" alt="Logo" srcset=""> -->
+                <h3 class="heading-tertiary">fFf</h3>
+            </div>
+            <div class="header__menu-icon"></div>
+            <div class="header__btn-container">
+                <a href="./signin.html" class="btn btn--alt">Sign In</a>
+                <a href="./signup.html" class="btn btn--alt">Register</a>
+            </div>
+            <nav class="primary-nav primary-nav--pull-right">
+                <ul>
+                    <li><a class="btn" href="#about-us">About Us</a></li>
+                    <li><a class="btn" href="#contact-us">Contact Us</a></li>
+                </ul>
             </nav>
+            
+            
         </header>
         <main>
             <section class="hero">
-                <div class="title">
-                    <h1>Fast-Food-Fast</h1>
-                    <p>The best of local and foreign cuisine delivered to your doorsteps in no time</p>
-                    <a class="btn" href="./menu.html">View Menu and Order</a>
+                <div class="hero__text-box">
+                    <h1 class="hero__heading">Fast-Food-Fast</h1>
+                    <p class="hero__sub-heading">The best of local and foreign cuisine delivered to your doorsteps in no time</p>
+                    <a class="btn btn--xl btn--main" href="./menu.html">View Menu and Order</a>
                 </div>
             </section>
-            <div class="row">
-                <section class="column">
-                    <h2 class="subtitle">About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam in sequi incidunt tempora!</p>
-                </section>
-                <section class="column">
-                    <h2 class="subtitle">Our Services</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eligendi earum maxime corporis at aperiam!
-                    </p>
-                </section>
-                <section class="column">
-                    <h2 class="subtitle">Contact Us</h2>
-                    <form action="">
-                        <div class="inner-wrap">
-                            <textarea name="message" id="message" placeholder="Your Message Here"></textarea>
+
+            <section id="about-us" class="about-section">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">Who we Are</h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Our Core Values</h3>
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et suscipit nobis nulla iure accusantium quisquam eveniet sed voluptas hic officia consequatur mollitia esse ut totam amet, minus quae. Eos dolore quaerat ratione blanditiis esse officia, impedit officiis veniam numquam!</p>
+                        <p class="paragraph">Lorem ipsum, dsolor sit amet consectetur adipisicing elit. Adipisci, eius. Blanditiis explicabo consectetur nulla nesciunt debitis. Nostrum ipsum excepturi placeat.</p>
+                        <a href="#" class="btn-text">Learn more &rarr;</a>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="composition">
+                            <img src="img/palm-oil-stew-10.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                            <img src="img/publichealth.png" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img src="img/IMG_7971.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
                         </div>
-                    </form>
-                    <a class="btn">Send Message</a>
-                </section>
-            </div>
+                    </div>
+                </div>
+                
+            </section >
+            <section id="contact-us" class="contact-section">
+                <div class="row">
+                    <div class="contact">
+                        <div class="contact__form">
+                            <form action="#" class="form">
+                                <div class="u-margin-bottom-medium">
+                                    <h2 class="heading-secondary">
+                                        Ask Us Anything!!!
+                                    </h2>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="text" name="name" placeholder="Full name" id="name" class="form__input required">
+                                    <label for="name" class="form__label">Full name</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="email" name="email" placeholder="Email address" id="email" class="form__input required">
+                                    <label for="email" class="form__label">Email address</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <textarea class="form__textarea" name="message" id="message" placeholder="Your Message Here"></textarea>
+                                    <label for="message" class="form__label">Your Message Here</label>
+                                </div>
+
+                                <a href="#" class="btn btn--main">Send Message</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- <section class="grid-test">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        Col 1 of 2
+                    </div>
+                    <div class="col-1-of-2">
+                        Col 1 of 2
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        Col 1 of 3
+                    </div>
+                    <div class="col-1-of-3">
+                        Col 1 of 3
+                    </div>
+                    <div class="col-1-of-3">
+                        Col 1 of 3
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        Col 1 of 3
+                    </div>
+                    <div class="col-2-of-3">
+                        Col 2 of 3
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-4">Col 1 of 4</div>
+                    <div class="col-1-of-4">Col 1 of 4</div>
+                    <div class="col-1-of-4">Col 1 of 4</div>
+                    <div class="col-1-of-4">Col 1 of 4</div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-4">
+                        Col 1 of 4
+                    </div>
+                    <div class="col-1-of-4"> 
+                        Col 1 of 4
+                    </div>
+                    <div class="col-2-of-4">
+                        Col 2 of 4
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-4">
+                        Col 1 of 4
+                    </div>
+                    <div class="col-3-of-4">
+                        Col 3 of 4
+                    </div>
+                </div>
+            </section> -->
+
         </main>
-        <footer>
-            <p>Fast-Food-Fast &copy; 2018. Developed with &hearts; by Haywhyze</p>
+        <footer class="footer">
+            <p class="paragraph u-center-text">Fast-Food-Fast &copy; 2018. Developed with &hearts; by Haywhyze</p>
         </footer>
+
+        <a class="btn btn--main u-go-to-top" href="#">&uArr;</a>
     </div>
 
     <script src="./js/script.js"></script>
