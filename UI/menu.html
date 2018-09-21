@@ -19,7 +19,7 @@
                 <h3 class="heading-tertiary">fFf</h3>
             </div>
             <div class="header__btn-container">
-                <i class="fas fa-cart-arrow-down btn"></i>
+                <a href="#checkout"><i class="fas fa-cart-arrow-down btn"></i></a>
                 <a href="./signup.html" class="btn btn--alt">Logout</a>
             </div>
             <nav class="primary-nav primary-nav--pull-right">
@@ -247,11 +247,80 @@
     
             <a class="btn btn--main u-go-to-top" href="#">&uArr;</a>
     </div>
-    <div class="checkout">
+    <div class="checkout" id="checkout">
         <div class="checkout__content">
-            CHECKOUT FORM
+            
+                    <div class="u-center-text u-margin-bottom-small">
+                            <h3 class="heading-tertiary">
+                                Fill Delivery information to complete Order
+                            </h3>
+                        </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                            <form action="#" class="form">
+                        <div class="form__group">
+                                    <input type="text" name="name" placeholder="Full name" id="name" class="form__input required">
+                                    <label for="name" class="form__label">Full name</label>
+                                </div>
+                    
+                                <div class="form__group">
+                                    <input type="email" name="email" placeholder="Email address" id="email" class="form__input required">
+                                    <label for="email" class="form__label">Email address</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="tel" name="number" placeholder="Phone Number" id="number" class="form__input required">
+                                    <label for="number" class="form__label">Phone Number</label>
+                                </div>
+                    
+                                <div class="form__group">
+                                    <textarea class="form__textarea" name="address" id="message" placeholder="Delivery Address"></textarea>
+                                    <label for="message" class="form__label">Delivery Address</label>
+                                </div>
+                            </form>                    
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="checkout__order-item">
+                            <p class="paragraph">Pizza <br>
+                            Quantity: <span class="checkout__value u-padding-small">1</span> 
+                            <a href="#" class="btn-text u-padding-small">-</a>
+                            <a href="#" class="btn-text u-padding-small">+</a><br>
+                            Price: <span class="checkout__value">#2000</span><br> 
+                           Total: <span class="checkout__value">#2000</span> </p>
+                            <a href="#" class="btn-text">Remove item</a>
+                        </div>
+                        <div class="checkout__order-item">
+                            <p class="paragraph">Chiken and Chips <br>
+                            Quantity: <span class="checkout__value u-padding-small">2</span> 
+                            <a href="#" class="btn-text u-padding-small">-</a>
+                            <a href="#" class="btn-text u-padding-small">+</a><br>
+                            Price: <span class="checkout__value">#1200</span><br> 
+                            Total: <span class="checkout__value">#2400</span> </p>
+                            <a href="#" class="btn-text">Remove item</a>
+                        </div>
+                        <div class="checkout__order-item">
+                            <p class="paragraph">Milk Shakes <br>
+                            Quantity: <span class="checkout__value u-padding-small">1</span> 
+                            <a href="#" class="btn-text u-padding-small">-</a>
+                            <a href="#" class="btn-text u-padding-small">+</a><br>
+                            Price: <span class="checkout__value">#2000</span><br> 
+                            Total: <span class="checkout__value">#2000</span> </p>
+                            <a href="#" class="btn-text">Remove item</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-center-text">
+                    <a href="#" class="btn btn--main">submit order</a>
+                </div>
+                <a href="#" class="checkout__close">&times;</a>
+                
+
+            
         </div>
     </div>
+
+            
+        
 
     <script src="./js/script.js"></script>
 </body>

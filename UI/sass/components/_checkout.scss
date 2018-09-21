@@ -4,6 +4,66 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(black, .25);
-    
+    background-color: rgba(black, .8);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s; 
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__content {
+        @include absCenter;
+        height: 50rem;
+        width: 80%;
+        background-color: $color-text-light;
+        overflow: scroll;
+    }
+
+    & .row,
+    & .form__group, 
+    & .paragraph {
+        margin-bottom: 1rem;
+    }
+
+    & .form__input {
+        padding: .5rem;
+    }
+
+    &__order-item {
+        border-bottom: .5px solid gray;
+        padding: 1rem;
+
+        & .btn {
+            padding: 1rem;
+        }
+    }
+
+    &__value {
+        display: inline-block;
+        margin: .4rem;
+        padding: .2rem;
+        background-color: rgba($color-secondary, 0.1);
+    }
+
+    &__close {
+        &:link,
+        &:visited {
+            color: gray;
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
 }

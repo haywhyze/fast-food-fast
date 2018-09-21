@@ -102,6 +102,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 6rem; }
 
+.u-padding-small {
+  padding: 1rem !important; }
+
 .u-go-to-top {
   position: fixed !important;
   top: 90vh;
@@ -330,7 +333,49 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.25); }
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s; }
+  .checkout:target {
+    opacity: 1;
+    visibility: visible; }
+  .checkout__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50rem;
+    width: 80%;
+    background-color: #fbf5f3;
+    overflow: scroll; }
+  .checkout .row,
+  .checkout .form__group,
+  .checkout .paragraph {
+    margin-bottom: 1rem; }
+  .checkout .form__input {
+    padding: .5rem; }
+  .checkout__order-item {
+    border-bottom: .5px solid gray;
+    padding: 1rem; }
+    .checkout__order-item .btn {
+      padding: 1rem; }
+  .checkout__value {
+    display: inline-block;
+    margin: .4rem;
+    padding: .2rem;
+    background-color: rgba(33, 118, 174, 0.1); }
+  .checkout__close:link, .checkout__close:visited {
+    color: gray;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s; }
+  .checkout__close:hover {
+    color: #2176AE; }
 
 .hero {
   height: 95vh;
