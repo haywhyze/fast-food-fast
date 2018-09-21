@@ -13,8 +13,13 @@
     color: $color-text-light;
     clip-path: polygon(0 0, 100% 0%, 100% 85vh, 0% 100%);
 
+    @include respond(tab-port) {
+        clip-path: polygon(0 0, 100% 0%, 100% 90vh, 0% 100%);
+    }
+
     &__text-box {
         position: absolute;
+        width: 90%;
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -36,12 +41,20 @@
     background-color: $color-grey-light;
     padding: 15rem 0;
     margin-top: -10vh;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .contact-section {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, 
                                         $color-secondary, $color-tertiary);
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .contact {
@@ -59,5 +72,8 @@
     &__form {
         width: 50%;
         
+        @include respond(tab-port) {
+            width: 70%;
+        }
     }
 }
