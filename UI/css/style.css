@@ -420,3 +420,8 @@ body {
 .menu-container {
   padding-top: 8rem;
   background-color: #fbf5f3; }
+
+.signup-form {
+  width: 80%;
+  margin: 10rem auto;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
