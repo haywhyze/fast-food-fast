@@ -156,8 +156,16 @@ body {
       .header__logo-box {
         left: 50%;
         transform: translateX(-50%); } }
+  @media (max-width: 37.5em) {
+    .header__menu {
+      text-align: center;
+      padding-top: 8rem;
+      background-color: rgba(236, 50, 88, 0.3); } }
   .header__btn-container {
     float: right; }
+    @media (max-width: 37.5em) {
+      .header__btn-container {
+        float: none; } }
 
 .row {
   max-width: 114rem;
@@ -301,12 +309,19 @@ body {
   list-style: none;
   float: left;
   padding-right: 1.1rem; }
+  @media (max-width: 37.5em) {
+    .primary-nav li {
+      float: none;
+      display: inline-block; } }
 
 .primary-nav a {
   color: #fbf5f3; }
 
 .primary-nav--pull-right {
   float: right; }
+  @media (max-width: 37.5em) {
+    .primary-nav--pull-right {
+      float: none; } }
 
 .composition {
   position: relative; }

@@ -26,7 +26,20 @@
         }
     }
 
+    &__menu {
+
+        @include respond(phone) {
+            text-align: center;
+            padding-top: 8rem;
+            background-color: rgba($color-primary, 0.3);
+        }
+    }
+
     &__btn-container {
         float: right;
+
+        @include respond(phone) {
+            float: none;
+        }
     }
 }
