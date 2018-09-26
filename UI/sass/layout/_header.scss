@@ -2,27 +2,38 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 1.2rem 4rem;
+    padding: 0;
     z-index: 2;
-    background-color: rgba($color-primary, 0.3);
+    background-color: rgba($color-primary, 1);
     width: 100%;
 
-    @include respond(phone) {
-        background-color: initial;
+    &__container {
+        @include clearfix;
+        padding: 1.2rem 4rem;
     }
 
-    @include clearfix;
+    
 
     &__logo-box {
         display: inline-block;
         position: absolute;
         top: 0;
         background: $color-secondary;
-        padding: 3rem 4rem;
+        padding: 1rem .2rem;
+
+    }
+
+    &__logo-text {
+        font-family: 'Berkshire Swash', cursive;
+        background-image: linear-gradient(to bottom, $color-text-light, lighten($color-primary, .7));
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 4rem;
 
         @include respond(phone) {
-            left: 50%;
-            transform: translateX(-50%);
+            font-size: 2.5rem;
         }
     }
 
@@ -37,9 +48,6 @@
 
     &__btn-container {
         float: right;
-
-        @include respond(phone) {
-            float: none;
-        }
+        @include clearfix;
     }
 }

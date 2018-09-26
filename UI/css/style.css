@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash");
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -136,27 +137,33 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 1.2rem 4rem;
+  padding: 0;
   z-index: 2;
-  background-color: rgba(236, 50, 88, 0.3);
+  background-color: #ec3258;
   width: 100%; }
-  @media (max-width: 37.5em) {
-    .header {
-      background-color: initial; } }
-  .header::after {
-    content: "";
-    clear: both;
-    display: table; }
+  .header__container {
+    padding: 1.2rem 4rem; }
+    .header__container::after {
+      content: "";
+      clear: both;
+      display: table; }
   .header__logo-box {
     display: inline-block;
     position: absolute;
     top: 0;
     background: #2176AE;
-    padding: 3rem 4rem; }
+    padding: 1rem .2rem; }
+  .header__logo-text {
+    font-family: 'Berkshire Swash', cursive;
+    background-image: linear-gradient(to bottom, #fbf5f3, #ec355b);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 4rem; }
     @media (max-width: 37.5em) {
-      .header__logo-box {
-        left: 50%;
-        transform: translateX(-50%); } }
+      .header__logo-text {
+        font-size: 2.5rem; } }
   @media (max-width: 37.5em) {
     .header__menu {
       text-align: center;
@@ -164,9 +171,10 @@ body {
       background-color: rgba(236, 50, 88, 0.3); } }
   .header__btn-container {
     float: right; }
-    @media (max-width: 37.5em) {
-      .header__btn-container {
-        float: none; } }
+    .header__btn-container::after {
+      content: "";
+      clear: both;
+      display: table; }
 
 .row {
   max-width: 114rem;
