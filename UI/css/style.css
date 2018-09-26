@@ -98,7 +98,8 @@ body {
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: auto .4rem; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -512,7 +513,14 @@ body {
 .signup-form {
   width: 80%;
   margin: 10rem auto;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  width: 50rem; }
+  @media (max-width: 56.25em) {
+    .signup-form {
+      width: 50%; } }
+  @media (max-width: 37.5em) {
+    .signup-form {
+      width: 95%; } }
 
 .order-history {
   width: 80%;
