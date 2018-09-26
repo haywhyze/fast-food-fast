@@ -133,12 +133,15 @@ body {
   top: 90vh;
   left: 90vw; }
 
+.u-show {
+  display: block !important; }
+
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 0;
-  z-index: 2;
+  z-index: 1112;
   background-color: #ec3258;
   width: 100%; }
   .header__container {
@@ -147,6 +150,14 @@ body {
       content: "";
       clear: both;
       display: table; }
+  .header__menu-icon {
+    display: none; }
+    @media (max-width: 37.5em) {
+      .header__menu-icon {
+        display: block;
+        float: right;
+        font-size: 2.5rem;
+        color: #fbf5f3; } }
   .header__logo-box {
     display: inline-block;
     position: absolute;
@@ -163,9 +174,10 @@ body {
     font-size: 4rem; }
     @media (max-width: 37.5em) {
       .header__logo-text {
-        font-size: 2.5rem; } }
+        font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .header__menu {
+      display: none;
       text-align: center;
       padding-top: 8rem;
       background-color: rgba(236, 50, 88, 0.3); } }
@@ -461,6 +473,22 @@ body {
   .checkout__close:hover {
     color: #2176AE; }
 
+.table {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 2rem;
+  border-collapse: collapse; }
+  .table tbody tr:nth-child(even) {
+    background-color: rgba(236, 50, 88, 0.2); }
+    .table tbody tr:nth-child(even):hover {
+      background-color: rgba(236, 50, 88, 0.5); }
+  .table tbody tr:nth-child(odd) {
+    background-color: rgba(33, 118, 174, 0.2); }
+    .table tbody tr:nth-child(odd):hover {
+      background-color: rgba(33, 118, 174, 0.5); }
+  .table td {
+    padding: 1rem; }
+
 .hero {
   height: 95vh;
   text-align: center;
@@ -534,18 +562,3 @@ body {
   width: 80%;
   margin: 10rem auto;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-  .order-history table {
-    width: 100%;
-    font-size: 1.6rem;
-    padding: 2rem;
-    border-collapse: collapse; }
-    .order-history table tbody tr:nth-child(even) {
-      background-color: rgba(236, 50, 88, 0.2); }
-      .order-history table tbody tr:nth-child(even):hover {
-        background-color: rgba(236, 50, 88, 0.5); }
-    .order-history table tbody tr:nth-child(odd) {
-      background-color: rgba(33, 118, 174, 0.2); }
-      .order-history table tbody tr:nth-child(odd):hover {
-        background-color: rgba(33, 118, 174, 0.5); }
-    .order-history table td {
-      padding: 1rem; }
