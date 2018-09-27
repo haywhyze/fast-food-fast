@@ -1,0 +1,34 @@
+.primary-nav {
+
+    @include clearfix;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        
+        @include clearfix;
+    }
+
+    li {
+        list-style: none;
+        float: left;
+        padding-right: 1.1rem;
+        
+        @include respond(phone) {
+            float: none;
+            display: inline-block;
+        }
+    }
+
+    a {
+        color: $color-text-light;
+    }
+
+    &--pull-right {
+        float: right;
+
+        @include respond(phone) {
+            float: none;
+        }
+    }  
+}
