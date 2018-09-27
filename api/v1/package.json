@@ -4,7 +4,7 @@
     "description": "RESTful APIs that serves fron-end web clients",
     "main": "app.js",
     "scripts": {
-        "test": "mocha app.test.js --compilers js:babel-core/register",
+        "test": "mocha app.test.js --compilers js:babel-core/register --exit",
         "start": "nodemon app.js --exec babel-node --"
     },
     "author": "Yusuf Ayo",
