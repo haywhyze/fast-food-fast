@@ -12,50 +12,48 @@
 
 <body>
     <div class="container">
-            <header class="header">
-                <div class="header__container">
-                    <a href="./">
-                        <div class="header__logo-box">
-                            <h3 class="header__logo-text">Fast-Food-Fast</h3>
-                        </div>
-                    </a>
-                    <div class="header__btn-container">
-                        <a href="./signup.html" class="btn btn--alt">Register</a>
-                    </div>        
+        <header>
+            <nav class="menu" id="main-menu">
+
+                <button class="menu-toggle" id="toggle-menu">
+                            toggle menu
+                        </button>
+                <div class="menu-dropdown">
+                    <ul class="nav-menu">
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="./signup.html">Register</a>
+                        </li>
+                        <li>
+                            <a href="#">Sign In</a>
+                        </li>
+                    </ul>
                 </div>
-            </header>
+            </nav>
+        </header>
         <main>
-            <div class="signup-form">
-                <div class="u-center-text">
-                    <h2 class="heading-secondary">Log In Now!</h2>
-                    <h3 class="heading-tertiary">Log In to get food delivered to your doorstep in no time</h3>
-                </div>
-                <form action="#" class="form">
-
-                    <div class="form__group">
-                        <input type="text" name="username" placeholder="Username" id="username" class="form__input required">
-                        <label for="username" class="form__label">Username</label>
+            <div class="form">
+                <h1>Log In!<span>Log in to get food delivered to your doorstep as soon as possible</span></h1>
+                <form>
+                    <div class="section"><span>&LowerRightArrow;</span>Email &amp; Password</div>
+                    <div class="inner-wrap">
+                        <label>Email Address <input type="email" name="email" required></label>
+                        <label>Password <input type="password" name="password" required></label>
+                        <span class="subscribe">
+                                <input type="checkbox" name="subscribe">Remember Me
+                            </span>
+                        <p>Forgot Password? Click <a href="#">here</a> to recover password</p>
                     </div>
-
-                    <div class="form__group">
-                        <input type="email" name="email" placeholder="Email address" id="email" class="form__input required">
-                        <label for="email" class="form__label">Email address</label>
-                    </div>
-
-                    <div class="form__group">
-                        <input type="password" name="password" placeholder="Password" id="password" class="form__input required">
-                        <label for="password" class="form__label">Password</label>
-                    </div>
-
-                    <div class="u-center-text">
-                        <a href="#" class="btn btn--main u-center-text">Log In</a>
-                    </div>
-                    <p class="paragraph">If you do not have an account, click <a class="btn-text" href="./signup.html">here</a> to register</p>
+                    <input class="btn submit" type="submit" name="Sign Up">
+                    <p>If you do not have an account, click <a href="signup.html">here</a> to register</p>
                 </form>
             </div>
         </main>
-        <footer class="footer u-center-text">
-            <p class="paragraph">Fast-Food-Fast &copy; 2018. Developed with &hearts; by Haywhyze</p>
+        <footer>
+            <p>Fast-Food-Fast &copy; 2018. Developed with &hearts; by Haywhyze</p>
         </footer>
     </div>
 
