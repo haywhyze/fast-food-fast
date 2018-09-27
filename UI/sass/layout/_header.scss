@@ -6,6 +6,7 @@
     z-index: 1112;
     background-color: rgba($color-primary, 1);
     width: 100%;
+    
 
     &__container {
         @include clearfix;
@@ -61,3 +62,4 @@
         @include clearfix;
     }
 }
+

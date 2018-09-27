@@ -26,4 +26,6 @@
 
 .u-show {
     display: block !important;
+    animation-name: moveInTop;
+    animation-duration: .5s;
 }

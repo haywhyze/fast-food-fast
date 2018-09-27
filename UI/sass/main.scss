@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
-@import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
@@ -17,7 +16,7 @@
 @import "components/primary-nav";
 @import "components/composition";
 @import "components/form";
-@import "components/checkout";
+@import "components/modal";
 @import "components/table";
 
 @import "pages/home";

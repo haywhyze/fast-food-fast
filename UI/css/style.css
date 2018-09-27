@@ -29,6 +29,16 @@
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem); }
+  80% {
+    transform: translateY(0.2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 *,
 ::before,
 ::after {
@@ -134,7 +144,9 @@ body {
   left: 90vw; }
 
 .u-show {
-  display: block !important; }
+  display: block !important;
+  animation-name: moveInTop;
+  animation-duration: .5s; }
 
 .header {
   position: fixed;
@@ -270,14 +282,13 @@ body {
 .btn-text {
   color: #ec3258;
   padding-bottom: .5rem;
-  font-weight: 700;
+  font-weight: normal;
   font-size: 1.6rem;
   text-decoration: none;
-  border-bottom: 1px solid #ec3258; }
+  cursor: pointer; }
   .btn-text:hover {
-    background-color: #ec3258;
-    color: #fbf5f3;
-    font-weight: normal; }
+    font-weight: 700;
+    border-bottom: 1px solid #ec3258; }
 
 .card {
   position: relative;
@@ -288,7 +299,7 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
   .card__picture img {
     max-width: 100%;
-    max-height: 25rem; }
+    height: 25rem; }
   .card__heading {
     font-size: 2rem;
     padding: 0 1rem;
@@ -422,21 +433,21 @@ body {
     visibility: hidden;
     transform: translateY(-4rem); }
 
-.checkout {
+.modal {
   height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 999;
+  z-index: 999999;
   opacity: 0;
   visibility: hidden;
   transition: all 1s; }
-  .checkout:target {
+  .modal:target {
     opacity: 1;
     visibility: visible; }
-  .checkout__content {
+  .modal__content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -445,33 +456,38 @@ body {
     width: 80%;
     background-color: #fbf5f3;
     overflow: scroll; }
-  .checkout .row,
-  .checkout .form__group,
-  .checkout .paragraph {
+  .modal .row,
+  .modal .form__group,
+  .modal .paragraph {
     margin-bottom: 1rem; }
-  .checkout .form__input {
+  .modal .form__input {
     padding: .5rem; }
-  .checkout__order-item {
+  .modal__order-item {
     border-bottom: .5px solid gray;
     padding: 1rem; }
-    .checkout__order-item .btn {
+    .modal__order-item .btn {
       padding: 1rem; }
-  .checkout__value {
+  .modal__value {
     display: inline-block;
     margin: .4rem;
     padding: .2rem;
     background-color: rgba(33, 118, 174, 0.1); }
-  .checkout__close:link, .checkout__close:visited {
+  .modal__close:link, .modal__close:visited {
     color: gray;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    font-size: 3rem;
+    top: 4.5rem;
+    right: 4.5rem;
+    font-size: 8rem;
     text-decoration: none;
     display: inline-block;
     transition: all .2s; }
-  .checkout__close:hover {
+  .modal__close:hover {
     color: #2176AE; }
+
+/******* After Being told to stop using sass ***********/
+.modal__close:link,
+.modal__close:visited {
+  position: fixed;
+  float: right; }
 
 .table {
   width: 100%;
@@ -488,6 +504,18 @@ body {
       background-color: rgba(33, 118, 174, 0.5); }
   .table td {
     padding: 1rem; }
+  .table--inner tr {
+    background-color: #eee !important;
+    border: dotted 1px #55d; }
+    .table--inner tr:hover {
+      background-color: #ccc !important; }
+
+.details {
+  display: none;
+  overflow: hidden;
+  animation-name: moveInTop;
+  animation-duration: .5s;
+  transition: display .5s ease-out; }
 
 .hero {
   height: 95vh;

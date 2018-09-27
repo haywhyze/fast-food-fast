@@ -24,4 +24,23 @@
         padding: 1rem;
     }
 
+    &--inner {
+        & tr {
+            background-color: #eee !important;
+            border: dotted 1px #55d;
+    
+            &:hover {
+                background-color: #ccc !important;
+            }
+        }
+    }
+
+}
+
+.details {
+    display: none;
+    overflow: hidden;
+    animation-name: moveInTop;
+    animation-duration: .5s;
+    transition: display .5s ease-out;
 }
