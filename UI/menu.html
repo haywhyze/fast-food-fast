@@ -8,27 +8,35 @@
     <title>Fast-Food-Fast | Menu</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <a href="./">
-                <div class="header__logo-box">
-                    <!-- <img class="header__logo" src="" alt="Logo" srcset=""> -->
-                    <h3 class="heading-tertiary">fFf</h3>
+            <div class="header__container">
+
+                <a href="./">
+                    <div class="header__logo-box">
+                        <h3 class="header__logo-text">Fast-Food-Fast</h3>
+                    </div>
+                </a>
+                <div class="header__menu-icon">
+                    <i class="fas fa-bars"></i>
                 </div>
-            </a>
-            <div class="header__btn-container">
-                <a href="#checkout"><i class="fas fa-cart-arrow-down btn"></i></a>
-                <a href="./signin.html" class="btn btn--alt">Logout</a>
+                <div class="header__menu">
+                    <div class="header__btn-container">
+
+                        <a href="./signin.html" class="btn btn--alt">Logout</a>
+                    </div>
+                    <nav class="primary-nav primary-nav--pull-right">
+                        <ul>
+                            <li><a class="btn" href="./history.html">Order History</a></li>
+                            <li><a href="#modal"><i class="material-icons btn">shopping_cart</i></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <nav class="primary-nav primary-nav--pull-right">
-                <ul>
-                    <li><a class="btn" href="./history.html">Order History</a></li>
-                </ul>
-            </nav>
         </header>
 
         <section class="menu-container">
@@ -39,7 +47,7 @@
             <div class="row">
                 <div class="col-1-of-3">
                     <div class="card">
-                    
+
                         <div class="card__picture">
                             <img src="./img/palm-oil-stew-10.jpg" alt="" srcset="">
                         </div>
@@ -47,15 +55,15 @@
                             Plaintain and Ponmo
                         </h4>
                         <div class="card__details">
-                                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
-                                <form action="" class="form">
-                                        <div class="form__group">
-                                            <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
-                                            <label for="name" class="form__label">Order Quantity</label>
-                                        </div>
-                                </form>
-                                <a href="#" class="btn btn--main">Add to Cart</a>
-                            </div>
+                            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
+                            <form action="" class="form">
+                                <div class="form__group">
+                                    <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
+
+                                </div>
+                            </form>
+                            <a href="#" class="btn btn--main">Add to Cart</a>
+                        </div>
                         <div class="card__price-tag">#2000</div>
 
                     </div>
@@ -71,10 +79,10 @@
                         <div class="card__details">
                             <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
                             <form action="" class="form">
-                                    <div class="form__group">
-                                        <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
-                                        <label for="name" class="form__label">Order Quantity</label>
-                                    </div>
+                                <div class="form__group">
+                                    <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
+
+                                </div>
                             </form>
                             <a href="#" class="btn btn--main">Add to Cart</a>
                         </div>
@@ -85,7 +93,7 @@
                 <div class="col-1-of-3">
                     <div class="card">
                         <div class="card__picture">
-                                <img src="./img/edika_ikong.jpg" alt="" srcset="">
+                            <img src="./img/edika_ikong.jpg" alt="" srcset="">
                         </div>
                         <h4 class="card__heading">
                             Plaintain and Ponmo
@@ -93,10 +101,10 @@
                         <div class="card__details">
                             <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
                             <form action="" class="form">
-                                    <div class="form__group">
-                                        <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
-                                        <label for="name" class="form__label">Order Quantity</label>
-                                    </div>
+                                <div class="form__group">
+                                    <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
+                                    <label for="name" class="form__label">Order Quantity</label>
+                                </div>
                             </form>
                             <a href="#" class="btn btn--main">Add to Cart</a>
                         </div>
@@ -104,227 +112,235 @@
 
                     </div>
                 </div>
-                </div>
-                <div class="row">
-                        <div class="col-1-of-3">
-                            <div class="card">
-                            
-                                <div class="card__picture">
-                                    <img src="./img/palm-oil-stew-10.jpg" alt="" srcset="">
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+
+                        <div class="card__picture">
+                            <img src="./img/palm-oil-stew-10.jpg" alt="" srcset="">
+                        </div>
+                        <h4 class="card__heading">
+                            Plaintain and Ponmo
+                        </h4>
+                        <div class="card__details">
+                            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
+                            <form action="" class="form">
+                                <div class="form__group">
+                                    <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
+                                    <label for="name" class="form__label">Order Quantity</label>
                                 </div>
-                                <h4 class="card__heading">
-                                    Plaintain and Ponmo
-                                </h4>
-                                <div class="card__details">
-                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
-                                        <form action="" class="form">
-                                                <div class="form__group">
-                                                    <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
-                                                    <label for="name" class="form__label">Order Quantity</label>
-                                                </div>
-                                        </form>
-                                        <a href="#" class="btn btn--main">Add to Cart</a>
-                                    </div>
+                            </form>
+                            <a href="#" class="btn btn--main">Add to Cart</a>
+                        </div>
                         <div class="card__price-tag">#2000</div>
 
-                            </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__picture">
+                            <img src="./img/IMG_8068-1.jpg" alt="" srcset="">
                         </div>
-                        <div class="col-1-of-3">
-                            <div class="card">
-                                <div class="card__picture">
-                                    <img src="./img/IMG_8068-1.jpg" alt="" srcset="">
+                        <h4 class="card__heading">
+                            Plaintain and Ponmo
+                        </h4>
+                        <div class="card__details">
+                            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
+                            <form action="" class="form">
+                                <div class="form__group">
+                                    <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
+                                    <label for="name" class="form__label">Order Quantity</label>
                                 </div>
-                                <h4 class="card__heading">
-                                    Plaintain and Ponmo
-                                </h4>
-                                <div class="card__details">
-                                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
-                                    <form action="" class="form">
-                                            <div class="form__group">
-                                                <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
-                                                <label for="name" class="form__label">Order Quantity</label>
-                                            </div>
-                                    </form>
-                                    <a href="#" class="btn btn--main">Add to Cart</a>
-                                </div>
-                                                                        <div class="card__price-tag">#2000</div>
-
-                            </div>
+                            </form>
+                            <a href="#" class="btn btn--main">Add to Cart</a>
                         </div>
-                        <div class="col-1-of-3">
-                            <div class="card">
-                                <div class="card__picture">
-                                        <img src="./img/edika_ikong.jpg" alt="" srcset="">
-                                </div>
-                                <h4 class="card__heading">
-                                    Plaintain and Ponmo
-                                </h4>
-                                <div class="card__details">
-                                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
-                                    <form action="" class="form">
-                                            <div class="form__group">
-                                                <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
-                                                <label for="name" class="form__label">Order Quantity</label>
-                                            </div>
-                                    </form>
-                                    <a href="#" class="btn btn--main">Add to Cart</a>
-                                </div>
-                                                                        <div class="card__price-tag">#2000</div>
+                        <div class="card__price-tag">#2000</div>
 
-                            </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__picture">
+                            <img src="./img/edika_ikong.jpg" alt="" srcset="">
                         </div>
+                        <h4 class="card__heading">
+                            Plaintain and Ponmo
+                        </h4>
+                        <div class="card__details">
+                            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
+                            <form action="" class="form">
+                                <div class="form__group">
+                                    <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
+                                    <label for="name" class="form__label">Order Quantity</label>
+                                </div>
+                            </form>
+                            <a href="#" class="btn btn--main">Add to Cart</a>
                         </div>
-                        <div class="row">
-                                <div class="col-1-of-3">
-                                    <div class="card">
-                                    
-                                        <div class="card__picture">
-                                            <img src="./img/palm-oil-stew-10.jpg" alt="" srcset="">
-                                        </div>
-                                        <h4 class="card__heading">
-                                            Plaintain and Ponmo
-                                        </h4>
-                                        <div class="card__details">
-                                                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
-                                                <form action="" class="form">
-                                                        <div class="form__group">
-                                                            <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
-                                                            <label for="name" class="form__label">Order Quantity</label>
-                                                        </div>
-                                                </form>
-                                                <a href="#" class="btn btn--main">Add to Cart</a>
-                                            </div>
-                                                                                    <div class="card__price-tag">#2000</div>
+                        <div class="card__price-tag">#2000</div>
 
-                                    </div>
-                                </div>
-                                <div class="col-1-of-3">
-                                    <div class="card">
-                                        <div class="card__picture">
-                                            <img src="./img/IMG_8068-1.jpg" alt="" srcset="">
-                                        </div>
-                                        <h4 class="card__heading">
-                                            Plaintain and Ponmo
-                                        </h4>
-                                        <div class="card__details">
-                                            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
-                                            <form action="" class="form">
-                                                    <div class="form__group">
-                                                        <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
-                                                        <label for="name" class="form__label">Order Quantity</label>
-                                                    </div>
-                                            </form>
-                                            <a href="#" class="btn btn--main">Add to Cart</a>
-                                        </div>
-                                                                                <div class="card__price-tag">#2000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
 
-                                    </div>
+                        <div class="card__picture">
+                            <img src="./img/palm-oil-stew-10.jpg" alt="" srcset="">
+                        </div>
+                        <h4 class="card__heading">
+                            Plaintain and Ponmo
+                        </h4>
+                        <div class="card__details">
+                            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
+                            <form action="" class="form">
+                                <div class="form__group">
+                                    <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
+                                    <label for="name" class="form__label">Order Quantity</label>
                                 </div>
-                                <div class="col-1-of-3">
-                                    <div class="card">
-                                        <div class="card__picture">
-                                                <img src="./img/edika_ikong.jpg" alt="" srcset="">
-                                        </div>
-                                        <h4 class="card__heading">
-                                            Plaintain and Ponmo
-                                        </h4>
-                                        <div class="card__details">
-                                            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
-                                            <form action="" class="form">
-                                                    <div class="form__group">
-                                                        <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
-                                                        <label for="name" class="form__label">Order Quantity</label>
-                                                    </div>
-                                            </form>
-                                            <a href="#" class="btn btn--main">Add to Cart</a>
-                                        </div>
-                                        <div class="card__price-tag">#2000</div>
-                                    </div>
+                            </form>
+                            <a href="#" class="btn btn--main">Add to Cart</a>
+                        </div>
+                        <div class="card__price-tag">#2000</div>
+
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__picture">
+                            <img src="./img/IMG_8068-1.jpg" alt="" srcset="">
+                        </div>
+                        <h4 class="card__heading">
+                            Plaintain and Ponmo
+                        </h4>
+                        <div class="card__details">
+                            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
+                            <form action="" class="form">
+                                <div class="form__group">
+                                    <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
+                                    <label for="name" class="form__label">Order Quantity</label>
                                 </div>
+                            </form>
+                            <a href="#" class="btn btn--main">Add to Cart</a>
+                        </div>
+                        <div class="card__price-tag">#2000</div>
+
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__picture">
+                            <img src="./img/edika_ikong.jpg" alt="" srcset="">
+                        </div>
+                        <h4 class="card__heading">
+                            Plaintain and Ponmo
+                        </h4>
+                        <div class="card__details">
+                            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia.</p>
+                            <form action="" class="form">
+                                <div class="form__group">
+                                    <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
+                                    <label for="name" class="form__label">Order Quantity</label>
                                 </div>
+                            </form>
+                            <a href="#" class="btn btn--main">Add to Cart</a>
+                        </div>
+                        <div class="card__price-tag">#2000</div>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer class="footer">
-                <p class="paragraph u-center-text">Fast-Food-Fast &copy; 2018. Developed with &hearts; by Haywhyze</p>
-            </footer>
-    
-            <a class="btn btn--main u-go-to-top" href="#">&uArr;</a>
+            <p class="paragraph u-center-text">Fast-Food-Fast &copy; 2018. Developed with &hearts; by Haywhyze</p>
+        </footer>
+
+        <a class="btn btn--main u-go-to-top" href="#">&uArr;</a>
     </div>
-    <div class="checkout" id="checkout">
-        <div class="checkout__content">
-            
-                    <div class="u-center-text u-margin-bottom-small">
-                            <h3 class="heading-tertiary">
-                                Fill Delivery information to complete Order
-                            </h3>
-                        </div>
-                <div class="row">
-                    <div class="col-1-of-2">
-                            <form action="#" class="form">
+    <div class="modal" id="modal">
+        <div class="modal__content">
+
+            <div class="u-center-text u-margin-bottom-small">
+                <h3 class="heading-tertiary">
+                    Fill Delivery information to complete Order
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <form action="#" class="form">
                         <div class="form__group">
-                                    <input type="text" name="name" placeholder="Full name" id="name" class="form__input required">
-                                    <label for="name" class="form__label">Full name</label>
-                                </div>
-                    
-                                <div class="form__group">
-                                    <input type="email" name="email" placeholder="Email address" id="email" class="form__input required">
-                                    <label for="email" class="form__label">Email address</label>
-                                </div>
+                            <input type="text" name="name" placeholder="Full name" id="name" class="form__input required">
+                            <label for="name" class="form__label">Full name</label>
+                        </div>
 
-                                <div class="form__group">
-                                    <input type="tel" name="number" placeholder="Phone Number" id="number" class="form__input required">
-                                    <label for="number" class="form__label">Phone Number</label>
-                                </div>
-                    
-                                <div class="form__group">
-                                    <textarea class="form__textarea" name="address" id="message" placeholder="Delivery Address"></textarea>
-                                    <label for="message" class="form__label">Delivery Address</label>
-                                </div>
-                            </form>                    
+                        <div class="form__group">
+                            <input type="email" name="email" placeholder="Email address" id="email" class="form__input required">
+                            <label for="email" class="form__label">Email address</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="tel" name="number" placeholder="Phone Number" id="number" class="form__input required">
+                            <label for="number" class="form__label">Phone Number</label>
+                        </div>
+
+                        <div class="form__group">
+                            <textarea class="form__textarea" name="address" id="message" placeholder="Delivery Address"></textarea>
+                            <label for="message" class="form__label">Delivery Address</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="modal__order-item">
+                        <p class="paragraph">Pizza <br> Quantity:
+                            <div class="form__group">
+                                <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
+                                <label for="name" class="form__label">Order Quantity</label>
+                            </div>
+
+                            <p class="paragraph">
+                                Unit Price: <span class="modal__value">#2000</span><br> Total: <span class="modal__value">#2000</span> </p>
+                        </p>
+                        <a href="#" class="btn-text">Remove item</a>
                     </div>
-                    <div class="col-1-of-2">
-                        <div class="checkout__order-item">
-                            <p class="paragraph">Pizza <br>
-                            Quantity: <span class="checkout__value u-padding-small">1</span> 
-                            <a href="#" class="btn-text u-padding-small">-</a>
-                            <a href="#" class="btn-text u-padding-small">+</a><br>
-                            Price: <span class="checkout__value">#2000</span><br> 
-                           Total: <span class="checkout__value">#2000</span> </p>
-                            <a href="#" class="btn-text">Remove item</a>
+                    <div class="modal__order-item">
+                        <p class="paragraph">Chiken and Chips <br> Quantity: </p>
+                        <div class="form__group">
+                            <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
+                            <label for="name" class="form__label">Order Quantity</label>
                         </div>
-                        <div class="checkout__order-item">
-                            <p class="paragraph">Chiken and Chips <br>
-                            Quantity: <span class="checkout__value u-padding-small">2</span> 
-                            <a href="#" class="btn-text u-padding-small">-</a>
-                            <a href="#" class="btn-text u-padding-small">+</a><br>
-                            Price: <span class="checkout__value">#1200</span><br> 
-                            Total: <span class="checkout__value">#2400</span> </p>
-                            <a href="#" class="btn-text">Remove item</a>
+
+                        <p class="paragraph">
+                            Unit Price: <span class="modal__value">#2000</span><br> Total: <span class="modal__value">#2000</span> </p>
+                        </p>
+                        <a href="#" class="btn-text">Remove item</a>
+                    </div>
+                    <div class="modal__order-item">
+                        <p class="paragraph">Milk Shakes <br> Quantity:
+                        </p>
+                        <div class="form__group">
+                            <input type="number" name="number" placeholder="Order Quantity" id="name" class="form__input required">
+                            <label for="name" class="form__label">Order Quantity</label>
                         </div>
-                        <div class="checkout__order-item">
-                            <p class="paragraph">Milk Shakes <br>
-                            Quantity: <span class="checkout__value u-padding-small">1</span> 
-                            <a href="#" class="btn-text u-padding-small">-</a>
-                            <a href="#" class="btn-text u-padding-small">+</a><br>
-                            Price: <span class="checkout__value">#2000</span><br> 
-                            Total: <span class="checkout__value">#2000</span> </p>
-                            <a href="#" class="btn-text">Remove item</a>
-                        </div>
+
+                        <p class="paragraph">
+                            Unit Price: <span class="modal__value">#2000</span><br> Total: <span class="modal__value">#2000</span> </p>
+                        </p>
+                        <a href="#" class="btn-text">Remove item</a>
                     </div>
                 </div>
-                <div class="u-center-text">
-                    <a href="#" class="btn btn--main">submit order</a>
-                </div>
-                <a href="#" class="checkout__close">&times;</a>
-                
+            </div>
+            <div class="u-center-text">
+                <a href="#" class="btn btn--main u-margin-bottom-small">submit order</a>
+            </div>
 
-            
+
+
+
         </div>
+        <a href="#" class="modal__close">&times;</a>
     </div>
 
-            
-        
-
-    <script src="./js/script.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

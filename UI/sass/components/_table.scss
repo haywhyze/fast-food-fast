@@ -1,0 +1,39 @@
+.table {
+    width: 100%;
+    font-size: $default-font-size;
+    padding: 2rem;
+    // border-collapse: collapse;
+    border: none;
+    & tbody tr:nth-child(even) {
+        background-color: rgba($color-primary, .2);
+        &:hover {
+            background-color: rgba($color-primary, .5);
+        }
+    }
+    & tbody tr:nth-child(odd) {
+        background-color: rgba($color-secondary, .2);
+        &:hover {
+            background-color: rgba($color-secondary, .5);
+        }
+    }
+    & td {
+        padding: 1rem;
+    }
+    &--inner {
+        & tr {
+            background-color: #eee !important;
+            border: dotted 1px #55d;
+            &:hover {
+                background-color: #ccc !important;
+            }
+        }
+    }
+}
+
+.details {
+    display: none;
+    overflow: hidden;
+    animation-name: moveInTop;
+    animation-duration: .5s;
+    transition: display .5s ease-out;
+}
