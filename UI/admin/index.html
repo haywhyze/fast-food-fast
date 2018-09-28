@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fast-Food-Fast | Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo-box">
+                    <h3 class="header__logo-text">Fast-Food-Fast</h3>
+                </div>
+                <div class="header__menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="header__menu">
+                    <div class="header__btn-container">
+                        <!-- <a href="./signin.html" class="btn btn--alt">My Profile</a> -->
+                        <a href="../signup.html" class="btn btn--alt">Logout</a>
+                    </div>
+                    <nav class="primary-nav primary-nav--pull-right">
+                        <ul>
+                            <li><a class="btn" href="#">Food Menu</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+        <main>
+            <div class="order-history admin-container u-center-text">
+                <h2 class="heading-secondary">Manage User's Order</h2>
+                <table class="table admin__table u-center-text">
+                    <thead>
+                        <tr>
+                            <th>Customer's Name</th>
+                            <th>Date</th>
+                            <th>Order ID</th>
+                            <th>Items Ordered</th>
+                            <th>Price</th>
+                            <th>Order Status</th>
+                            <th>Mark as completed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Faith Adekunle</td>
+                            <td>23/4/2018</td>
+                            <td>234876</td>
+                            <td>3 <a class="btn-text details-toggle">View Items</a></td>
+                            <td>5600</td>
+                            <td>
+                                <a href="#" class="btn btn--main btn--small btn--green">Accept</a>
+                                <a href="#" class="btn btn--main btn--small">Reject</a>
+                            </td>
+                            <td><input type="checkbox" name="box" id="box"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <span class="details">
+                                    <table class="table table--inner u-center-text">
+                                        <thead>
+                                            <tr>
+                                                <th>Items Ordered</th>
+                                                <th>Unit Price (#)</th>
+                                                <th>Quantity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Bread</td>
+                                                <td>300</td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sausage roll</td>
+                                                <td>800</td>
+                                                <td>2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tobechukwu Obitube</td>
+                            <td>23/4/2018</td>
+                            <td>234876</td>
+                            <td>4 <a class="btn-text">View Items</a></td>
+                            <td>5600</td>
+                            <td>
+                                <a href="#" class="btn btn--main btn--small btn--green">Accept</a>
+                                <a href="#" class="btn btn--main btn--small">Reject</a>
+                            </td>
+                            <td><input type="checkbox" name="box" id="box"></td>
+                        </tr>
+                        <tr>
+                            <td>Sunny Edogbo</td>
+                            <td>23/4/2018</td>
+                            <td>234876</td>
+                            <td>4 <a class="btn-text">View Items</a></td>
+                            <td>5600</td>
+                            <td>
+                                <a href="#" class="btn btn--main btn--small btn--green">Accept</a>
+                                <a href="#" class="btn btn--main btn--small">Reject</a>
+                            </td>
+                            <td><input type="checkbox" name="box" id="box"></td>
+                        </tr>
+                        <tr>
+                            <td>Azu Patrick</td>
+                            <td>23/4/2018</td>
+                            <td>234876</td>
+                            <td>4 <a class="btn-text">View Items</a></td>
+                            <td>5600</td>
+                            <td>
+                                <a href="#" class="btn btn--main btn--small btn--green">Accept</a>
+                                <a href="#" class="btn btn--main btn--small">Reject</a>
+                            </td>
+                            <td><input type="checkbox" name="box" id="box"></td>
+                        </tr>
+                        <tr>
+                            <td>Henry Izontimi</td>
+                            <td>23/4/2018</td>
+                            <td>234876</td>
+                            <td>4 <a class="btn-text">View Items</a></td>
+                            <td>5600</td>
+                            <td>
+                                <a href="#" class="btn btn--main btn--small btn--green">Accept</a>
+                                <a href="#" class="btn btn--main btn--small">Reject</a>
+                            </td>
+                            <td><input type="checkbox" name="box" id="box"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="modal">
+                    <div class="modal__content confirm u-center-text">
+                        <h3 class="heading-tertiary">
+                            Are you sure?<br>
+                            <a href="#" class="btn btn--main btn--small btn--green">Yes Please!!!</a>
+                            <a href="#" class="btn btn--main btn--small">No!!! That was a mistake</a>
+                        </h3>
+
+                    </div>
+                    <a href="#" class="modal__close">&times;</a>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
