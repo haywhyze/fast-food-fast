@@ -148,6 +148,9 @@ body {
   animation-name: moveInTop;
   animation-duration: .5s; }
 
+.fas {
+  font-size: x-large; }
+
 .header {
   position: fixed;
   top: 0;
@@ -244,7 +247,7 @@ body {
   padding: 2rem;
   margin-top: 2rem; }
 
-.btn:link, .btn:visited {
+.btn {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
@@ -255,29 +258,29 @@ body {
   cursor: pointer;
   text-shadow: none;
   padding: 1rem 2rem; }
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 2rem 4rem rgba(36, 22, 35, 0.2); }
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(36, 22, 35, 0.2); }
-
-.btn--main {
-  background: #ec3258;
-  color: #fbf5f3; }
-
-.btn--alt {
-  border: 1px solid #2176AE;
-  background-color: #70476e;
-  color: #fbf5f3; }
-
-.btn--xl:link, .btn--xl:visited {
-  padding: 1.2rem 4rem;
-  font-size: 2rem;
-  font-weight: 400;
-  animation: moveInBottom 1s ease-Out; }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2rem 4rem rgba(36, 22, 35, 0.2); }
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(36, 22, 35, 0.2); }
+  .btn--main {
+    background: #ec3258;
+    color: #fbf5f3; }
+  .btn--alt {
+    border: 1px solid #2176AE;
+    background-color: #70476e;
+    color: #fbf5f3; }
+  .btn--small {
+    padding: 0.5rem 1rem;
+    font-size: 80%; }
+  .btn--green {
+    background-color: green; }
+  .btn--xl:link, .btn--xl:visited {
+    padding: 1.2rem 4rem;
+    font-size: 2rem;
+    font-weight: 400;
+    animation: moveInBottom 1s ease-Out; }
 
 .btn-text {
   color: #ec3258;
@@ -441,21 +444,23 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 999999;
-  opacity: 0;
-  visibility: hidden;
+  display: none;
   transition: all 1s; }
   .modal:target {
-    opacity: 1;
-    visibility: visible; }
+    display: block; }
   .modal__content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 50rem;
-    width: 80%;
+    max-height: 50rem;
+    max-width: 80%;
+    padding: 5rem;
     background-color: #fbf5f3;
-    overflow: scroll; }
+    overflow: auto; }
+    @media (max-width: 56.25em) {
+      .modal__content {
+        padding: 1rem; } }
   .modal .row,
   .modal .form__group,
   .modal .paragraph {
@@ -493,7 +498,7 @@ body {
   width: 100%;
   font-size: 1.6rem;
   padding: 2rem;
-  border-collapse: collapse; }
+  border: none; }
   .table tbody tr:nth-child(even) {
     background-color: rgba(236, 50, 88, 0.2); }
     .table tbody tr:nth-child(even):hover {
@@ -590,3 +595,9 @@ body {
   width: 80%;
   margin: 10rem auto;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+
+.admin-container {
+  width: 95%; }
+
+.admin__table {
+  max-width: 100%; }
