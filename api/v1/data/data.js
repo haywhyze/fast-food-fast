@@ -2,23 +2,26 @@ const orders = [{
   orderId: 1,
   orderItems: [
     {
-      name: 'pizza',
+      id: 4301,
+      name: 'bread',
+      price: 450,
       quantity: 2,
-      price: 1500,
     },
     {
-      name: 'meat pie',
+      id: 4306,
+      name: 'shawarma',
+      price: 2500,
       quantity: 2,
-      price: 800,
     },
     {
-      name: 'five alive',
+      id: 4308,
+      name: 'coca-cola',
+      price: 150,
       quantity: 1,
-      price: 1200,
     },
   ],
-  orderPrice: 7000,
-  orderStatus: 'pending',
+  orderStatus: 'new',
+  totalPrice: 6050,
 }];
 
 export default orders;
