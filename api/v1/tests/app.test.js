@@ -3,7 +3,7 @@ import chai from 'chai';
 import { describe, it } from 'mocha';
 import app from '../app';
 
-const { expect } = chai.expect;
+const expect = chai.expect;
 
 chai.use(require('chai-http'));
 
