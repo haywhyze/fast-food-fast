@@ -3,6 +3,8 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import router from './routes/index';
 
+const PORT = process.env.PORT || 3000;
+
 // Set up express app
 const app = express();
 
@@ -13,7 +15,6 @@ app.use(router);
 
 
 // Set up server
-const PORT = 3000;
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
   console.log(`server listening on port ${PORT}`);
