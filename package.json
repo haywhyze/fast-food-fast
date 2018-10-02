@@ -8,6 +8,9 @@
         "start": "nodemon api/app.js --exec babel-node --",
         "coverage": "nyc report --reporter=text-lcov | coveralls"
     },
+    "engines": {
+        "node": "8.11.3"
+      },
     "author": "Yusuf Ayo",
     "license": "ISC",
     "dependencies": {

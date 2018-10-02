@@ -21,7 +21,7 @@ describe('GET /orders', () => {
 describe('GET /orders', () => {
   it('should return false if wrong parameter exist', () => {
     chai.request(app)
-      .get('/orders/tyyy')
+      .get('/api/v1/orders/tyyy')
       .then((response) => {
         expect(response).to.have.status(404);
         expect(response.body.success).to.equal('false');
@@ -32,7 +32,7 @@ describe('GET /orders', () => {
 describe('GET /orders', () => {
   it('should get a specified order', () => {
     chai.request(app)
-      .get('/orders/1')
+      .get('/api/v1/orders/1')
       .end((error, response) => {
         expect(response).to.have.status(200);
         expect(response.body).to.be.an('object');
@@ -44,7 +44,7 @@ describe('GET /orders', () => {
 describe('PUT /order', () => {
   it('should update the order specified', () => {
     chai.request(app)
-      .put('/orders/1')
+      .put('/api/v1/orders/1')
       .set('content-type', 'application/json')
       .send({ 'orderStatus': 'new' })
       .end((error, response) => {
@@ -59,7 +59,7 @@ describe('PUT /order', () => {
 describe('PUT /order', () => {
   it('should not update the order', () => {
     chai.request(app)
-      .put('/orders/1')
+      .put('/api/v1/orders/1')
       .set('content-type', 'application/json')
       .send({ 'orderStatus': 'good' })
       .end((error, response) => {
@@ -74,7 +74,7 @@ describe('PUT /order', () => {
 describe('POST /orders', () => {
   it('should place an order', () => {
     chai.request(app)
-      .post('/orders')
+      .post('/api/v1/orders')
       .set('content-type', 'application/json')
       .send({ 'orderItems': [{ 'id': '4302', 'quantity': '1' }] })
       .end((error, response) => {
@@ -88,7 +88,7 @@ describe('POST /orders', () => {
 describe('POST /orders', () => {
   it('should not place an order', () => {
     chai.request(app)
-      .post('/orders')
+      .post('/api/v1/orders')
       .set('content-type', 'application/json')
       .send({ 'orderItems': [{ 'id': '4olo', 'quantity': 'ppp' }] })
       .end((error, response) => {
