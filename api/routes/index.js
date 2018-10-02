@@ -4,15 +4,15 @@ import orderController from '../ordersControllers/orders';
 const router = express.Router();
 
 // query to get all orders
-router.get('/orders', orderController.getAllOrders);
+router.get('/api/v1/orders', orderController.getAllOrders);
 
 // placing new order
-router.post('/orders', orderController.createOrder);
+router.post('/api/v1/orders', orderController.createOrder);
 
 // fetching single order
-router.get('/orders/:id', orderController.getOrder);
+router.get('/api/v1/orders/:id', orderController.getOrder);
 
 // update order status from the database.
-router.put('/orders/:id', orderController.updateOrder);
+router.put('/api/v1/orders/:id', orderController.updateOrder);
 
 export default router;

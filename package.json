@@ -2,9 +2,9 @@
     "name": "fast-food-fast-api",
     "version": "1.0.0",
     "description": "RESTful APIs that serves fron-end web clients",
-    "main": "app.js",
+    "main": "api/app.js",
     "scripts": {
-        "test": "nyc mocha ./tests/* --compilers js:babel-core/register --exit",
+        "test": "nyc mocha ./app/tests/* --compilers js:babel-core/register --exit",
         "start": "nodemon app.js --exec babel-node --",
         "coverage": "nyc report --reporter=text-lcov | coveralls"
     },
