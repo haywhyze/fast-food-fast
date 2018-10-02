@@ -4,8 +4,8 @@
     "description": "RESTful APIs that serves fron-end web clients",
     "main": "api/app.js",
     "scripts": {
-        "test": "nyc mocha ./app/tests/* --compilers js:babel-core/register --exit",
-        "start": "nodemon app.js --exec babel-node --",
+        "test": "nyc mocha ./api/tests/* --compilers js:babel-core/register --exit",
+        "start": "nodemon api/app.js --exec babel-node --",
         "coverage": "nyc report --reporter=text-lcov | coveralls"
     },
     "author": "Yusuf Ayo",
