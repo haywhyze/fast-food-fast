@@ -1,8 +1,8 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable array-callback-return */
 /* eslint-disable consistent-return */
-import data from '../data/data';
-import food from '../data/food';
+import db from '../db';
+// import food from '../data/food';
 
 
 const foodIdArray = [];
