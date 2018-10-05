@@ -29,9 +29,9 @@ class OrdersController {
         });
       }
     });
-    return response.status(404).send({
+    return response.status(400).send({
       success: 'false',
-      message: 'the order you requested for does not exist',
+      message: 'Bad Request',
     });
   }
 
